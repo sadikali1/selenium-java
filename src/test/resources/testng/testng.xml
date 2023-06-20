@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+
+	 <listeners>
+		<listener class-name="com.framework.MyListners" />
+	</listeners> 
+	
+	<test name="Test Exmaple">
+		<classes>
+			<class name="com.selenium.tests.TestExample" />
+		</classes>
+	</test> 
+</suite> <!-- Suite -->

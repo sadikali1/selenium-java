@@ -1,0 +1,13 @@
+/id_rsa*
+/target/
+/screenshots/*/*png
+/test-output/
+/.metadata/
+/*.xlsx
+/data/*.xlsx
+/test-output/
+config.properties
+.classpath
+.settings/
+.project
+*.png

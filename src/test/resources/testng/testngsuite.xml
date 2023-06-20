@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="tests" name="Suite">
+
+	 <listeners>
+		<listener class-name="com.report.TestListener" />
+	</listeners> 
+	
+	<test name="Chrome">
+		<parameter name="BrowserName" value="chrome" />
+		<classes>
+			<class name="com.selenium.tests.Login" />
+		</classes>
+	</test> <!-- Test -->
+
+	
+</suite> <!-- Suite -->
