@@ -1,16 +1,16 @@
 package com.selenium.tests;
 
-import org.testng.annotations.Listeners;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.framework.MyListners;
-
+import com.report.RetryAnalyzer;
 
 public class TestExample {
 	
-	@Test
+	@Test //(retryAnalyzer = RetryAnalyzer.class)
 	public void test1() {
 		System.out.println("Testing1");
+		Assert.assertEquals(false, true);
 	}
 	
 	@Test

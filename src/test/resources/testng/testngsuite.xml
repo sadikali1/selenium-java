@@ -2,6 +2,7 @@
 <suite parallel="tests" name="Suite">
 
 	 <listeners>
+	 	<listener class-name="com.report.RetryListeners" />
 		<listener class-name="com.report.TestListener" />
 	</listeners> 
 	
