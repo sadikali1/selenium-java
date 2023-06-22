@@ -13,5 +13,18 @@
 		</classes>
 	</test> <!-- Test -->
 
+	<test name="Firefox">
+		<parameter name="BrowserName" value="firefox" />
+		<classes>
+			<class name="com.selenium.tests.Login" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Edge">
+		<parameter name="BrowserName" value="edge" />
+		<classes>
+			<class name="com.selenium.tests.Login" />
+		</classes>
+	</test> <!-- Test -->
 	
 </suite> <!-- Suite -->

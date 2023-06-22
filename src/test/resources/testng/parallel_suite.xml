@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+	 <listeners>
+	 	<!-- <listener class-name="com.report.RetryListeners" /> -->
+		<listener class-name="com.report.TestListener" />
+	</listeners> 
+	
+	<test name="Chrome" parallel="classes" thread-count="2">
+		<parameter name="BrowserName" value="chrome" />
+		<classes>
+			<class name="com.selenium.tests.Login" />
+			<class name="com.selenium.tests.UserManagement" />
+			<class name="com.selenium.tests.Dashboard" />
+		</classes>
+	</test> <!-- Test -->
+	
+</suite> <!-- Suite -->
