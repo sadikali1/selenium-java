@@ -16,6 +16,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.Status;
+import com.report.ReportTestManager;
+
 public class BaseTest {
 	
 	protected WebDriver driver;
@@ -54,6 +57,12 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
+	}
+	
+	
+	public void addLog(String message) {
+		if (ReportTestManager.getTest()!=null)
+			ReportTestManager.getTest().log(Status.PASS, message);
 	}
 	
 	public static String getConfig(String key) {

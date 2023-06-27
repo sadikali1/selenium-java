@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+	<listeners>
+		<listener class-name="com.report.TestListener" />
+	</listeners>
+
+	<test name="Chrome">
+		<parameter name="BrowserName" value="chrome" />
+		<classes>
+			<class name="com.selenium.tests.MagentoLogin">
+				<methods>
+					<include name="testLoginWithExcelData" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

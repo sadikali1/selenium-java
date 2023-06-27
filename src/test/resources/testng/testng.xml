@@ -3,6 +3,7 @@
 
 	 <listeners>
 		<listener class-name="com.report.RetryListeners" />
+		<listener class-name="com.report.TestListener" />
 	</listeners> 
 	
 	<test name="Test Exmaple">
